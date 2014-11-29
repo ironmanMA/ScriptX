@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "ScriptX",
+  "description": "This extension helps you run scripts without opening console.",
+  "version": "1.0",
+
+  "icons": {
+    "128": "icon_128.png",
+    "64": "icon_64.png",
+    "32": "icon_32.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon_128.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+      "tabs", 
+      "http://*/*", 
+      "https://*/*",
+      "storage"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
