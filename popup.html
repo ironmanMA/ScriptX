@@ -9,7 +9,7 @@
 			padding:50px;
 		}*/
 		
-		textarea{
+		#scriptArea{
 			width:400px;
 			
 			/* The following three rules make a difference in the script */
@@ -21,11 +21,11 @@
 			border:1px solid #999;
 			padding:10px;
 			font-family: monospace;
-			margin:0;
+			margin-left:20px;
 			display:block;
 			outline:none;
 			}
-			textarea:focus{
+		#scriptArea:focus{
 				border-color:#333;
 			}
 		.container{
@@ -33,20 +33,25 @@
 			/*display:inline-block;*/
 			margin-left: 10%;
 			}
-			.line-nums{
-				font-size:13px;
-				line-height:13px;
-				padding:10px 4px;
-				font-family: monospace;
-				background: #EEE;
-				position: absolute;
-				width: 15px;
-				left: -24px;
-				bottom: 0;
-				top: 0;
-				text-align:right;
-				}
+		.line-nums{
+			font-size:13px;
+			line-height:13px;
+			padding:10px 4px;
+			font-family: monospace;
+			background: #EEE;
+			position: absolute;
+			width: 15px;
+			/*left: -24px;*/
+			bottom: 0;
+			top: 0;
+			text-align:right;
+			}
 	</style>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-theme.min.css">
+	<script src="bootstrap.min.js"></script>
 
 </head>
 <body style="width:350px; height :450px;" >	
@@ -57,7 +62,7 @@
 		<textarea id="scriptArea" type="text" placeholder=" write your javascript code... " autocomplete="on" style=" width: 85%; "></textarea>
 	</div>	
 	<br><br>
-	<button id="clickme">Run</button>
+	<button id="clickme" type="button" class="btn btn-sm btn-success">Run</button>
 
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type='text/javascript' src="../behave.js"></script>
