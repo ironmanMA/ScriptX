@@ -1,0 +1,67 @@
+.main-body{
+	text-align:center;
+	/*background-color: rgb(228, 228, 228);*/
+	width:350px; 
+	height :450px;
+}
+
+.title-header{
+	margin: 10px;
+}
+
+.unit-exp{
+	margin: 5px;
+	font-size: 20px;
+	padding: 5px;
+	background-color: rgb(228, 228, 228);
+	border-radius: .25em;
+	/*float: left;*/
+}
+
+.action-button{
+	/*float: right;*/
+	width: 30px;
+}
+
+.scripter{
+	width:95%;
+	
+	overflow:scroll;
+	line-height: 13px;
+	font-size: 13px;
+	
+	
+	border:1px solid #999;
+	border-radius: .25em;
+	padding:10px;
+	font-family: monospace;
+
+	margin-top: 20px;
+}
+
+.scripter:focus{
+	border-color:#1FC31B;
+}
+
+.create-exp{
+	margin: 10px;
+	height: 30px;
+}
+
+.run-button{
+	float:right; 
+	margin-right:10px;
+	margin-top:5px;
+	width: 50px;
+}
+.clear-button{
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.create-button{
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;	
+}

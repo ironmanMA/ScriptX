@@ -1,49 +1,7 @@
 <html>
 <head>
 	<title>ScriptX</title>
-
-	<style type='text/css'>
-		
-		.main-body{
-			text-align:center;
-			background-color: rgb(228, 228, 228);
-			width:350px; 
-			height :450px;
-		}
-		
-		.scripter{
-			width:95%;
-			
-			overflow:scroll;
-			line-height: 13px;
-			font-size: 13px;
-			
-			
-			border:1px solid #999;
-			border-radius: .25em;
-			padding:10px;
-			font-family: monospace;
-
-			margin-top: 20px;
-		}
-
-		.scripter:focus{
-			border-color:#1FC31B;
-		}
-
-		.run-button{
-			float:right; 
-			margin-right:10px;
-			margin-top:5px;
-			width: 50px;
-		}
-		.clear-button{
-			float: right;
-			margin-right: 10px;
-			margin-top: 5px;
-		}
-	</style>
-
+	<link rel="stylesheet" href="main-style.css">
 	<script type="text/javascript" src="jquery.js"></script>	
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap-theme.min.css">
@@ -52,9 +10,33 @@
 </head>
 <body class="main-body" >
 	
-	<span class="label label-primary" style="font-size:20px"> Welcome to ScriptX
-	</span>
-	<button class="clear-button btn btn-xs btn-danger" >X</button>
+	<div class="title-header" >
+		<span class="label label-primary" style="font-size:20px"> Welcome to ScriptX
+		</span>
+		<!-- <button class="clear-button btn btn-xs btn-danger" >X</button> -->
+	</div>
+
+	<div class="create-exp" >
+		<button class="create-button btn btn-xs btn-success" >Create + </button>
+	</div>
+
+	<div class="dashboard-exp" >
+
+		<div class="unit-exp" >
+			<span class="label label-default" >Quora Exp</span>
+			<button class="action-button btn btn-xs btn-success" >&#8635</button>
+			<button class="action-button btn btn-xs btn-primary" >&#9776</button>
+			<button class="action-button btn btn-xs btn-danger" >&#9747</button>
+		</div>
+
+		<div class="unit-exp" >
+			<span class="label label-default" >Youtube Exp</span>
+			<button class="action-button btn btn-xs btn-success" >&#8635</button>
+			<button class="action-button btn btn-xs btn-primary" >&#9776</button>
+			<button class="action-button btn btn-xs btn-danger" >&#9747</button>
+		</div>
+
+	</div>
 
 	<textarea id="scriptArea" class="scripter" type="text" placeholder=" write your javascript code... " autocomplete="on" ></textarea>
 	<button id="clickme" type="button" class=" run-button btn btn-xs btn-success" >Run</button>
