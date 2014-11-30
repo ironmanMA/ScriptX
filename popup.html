@@ -14,8 +14,7 @@
 		.scripter{
 			width:95%;
 			
-			/* The following three rules make a difference in the script */
-			overflow:hidden;
+			overflow:scroll;
 			line-height: 13px;
 			font-size: 13px;
 			
@@ -37,7 +36,12 @@
 			margin-right:10px;
 			margin-top:5px;
 			width: 50px;
-		}	
+		}
+		.clear-button{
+			float: right;
+			margin-right: 10px;
+			margin-top: 5px;
+		}
 	</style>
 
 	<script type="text/javascript" src="jquery.js"></script>	
@@ -48,11 +52,14 @@
 </head>
 <body class="main-body" >
 	
-	<span class="label label-primary" style="font-size:20px"> Welcome to ScriptX</span>
+	<span class="label label-primary" style="font-size:20px"> Welcome to ScriptX
+	</span>
+	<button class="clear-button btn btn-xs btn-danger" >X</button>
 
 	<textarea id="scriptArea" class="scripter" type="text" placeholder=" write your javascript code... " autocomplete="on" ></textarea>
 	<button id="clickme" type="button" class=" run-button btn btn-xs btn-success" >Run</button>
 
+	<textarea id="storageArea" class="scripter" type="text" placeholder=" what's in storage... " autocomplete="on" ></textarea>
 	<script type='text/javascript' src="../behave.js"></script>
 	<script type="text/javascript" src="popup.js"></script>	
 			
