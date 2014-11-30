@@ -10,26 +10,61 @@
 }
 
 .unit-exp{
-	margin: 5px;
-	font-size: 20px;
+	margin: 7px;
 	padding: 5px;
 	background-color: rgb(228, 228, 228);
 	border-radius: .25em;
-	/*float: left;*/
+	height: 33px;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);
+}
+
+.unit-exp span{
+	font-size: 15px;
+	float: left;
+}
+
+.script-editor{
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	text-align:center;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.script-title-name{
+	width: 86%;
+	left: 7%;
+	margin-top: 15%;
+}
+
+.script-content{
+	width: 90%;
+	left: 5%;
+}
+
+.script-actions{
+	margin-top: 10px;
+}
+
+.script-actions button{
+	margin-left: 10px;
 }
 
 .action-button{
 	/*float: right;*/
 	width: 30px;
+	margin-left: 5px;
 }
 
 .scripter{
 	width:95%;
-	
-	overflow:scroll;
+	max-height:300px;
+	overflow-y:auto;
 	line-height: 13px;
 	font-size: 13px;
-	
 	
 	border:1px solid #999;
 	border-radius: .25em;
@@ -44,8 +79,13 @@
 }
 
 .create-exp{
-	margin: 10px;
+	margin: 5px;
 	height: 30px;
+}
+
+.dashboard-exp{
+	margin: 5px;
+	overflow: scroll;
 }
 
 .run-button{
@@ -61,7 +101,7 @@
 }
 
 .create-button{
-	float: right;
-	margin-right: 10px;
+	/*float: right;
+	margin-right: 10px;*/
 	margin-top: 5px;	
 }
