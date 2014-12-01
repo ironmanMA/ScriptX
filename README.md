@@ -13,3 +13,5 @@ I, Mohammad Arafath (@ironmanma) came up with this when I was not working/sleepi
 Support
 =======
 Having trouble with ScriptX? Contact we.mohammad@gmail.com and I’ll help you sort it out.
+
+Visit us at http://ironmanma.github.io/ScriptX/
