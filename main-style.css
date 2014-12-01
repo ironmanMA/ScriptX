@@ -53,6 +53,16 @@
 	margin-left: 10px;
 }
 
+.alert-stuff{
+	position: absolute;
+	font-size: 13px;
+	height: 0px;
+	line-height: 0px;
+	width: 80%;
+	left: 10%;
+	top:2%;
+}
+
 .action-button{
 	/*float: right;*/
 	width: 30px;
